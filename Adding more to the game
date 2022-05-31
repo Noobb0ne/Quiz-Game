@@ -1,0 +1,126 @@
+#In this I created three types of quizzes.
+print("Welcome to the Quiz Game!")
+print("Select what quiz game you want to play:")
+playing = input("SQL, Python or Riddles. ")
+if playing.lower() != "sql" or playing.lower() != "python" or playing.lower() != "riddles" or playing.lower() != "riddle":
+  print("Invalid Option, Try again later.")
+  quit()
+
+score = 0
+
+if playing.lower() == "sql":
+  print("Okay, Let's play the SQL Quiz Game!!")
+
+  answer1 = input("What is unique for every record in a database: ")
+  if answer1.lower() == "primary key":
+    ("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer2 = input("What is the fullform of SQL: ")
+  if answer2.lower() == "structured query language":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer3 = input("What contains all the data of an individual record: ")
+  if answer3.lower() == "tuple":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer4 = input("What statement is used to remove one or more record from a database: ")
+  if answer4.lower() == "delete":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer5 = input("What is a indeterminate length string data type in SQL: ")
+  if answer5.lower() == "varchar":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+
+elif playing.lower() == "python":
+  print("Okay, Let's play the Python Quiz Game!!")
+
+  answer1 = input("What function return a string with all characters in lower case: ")
+  if answer1.lower() == "lower()" or answer1.lower() == "lower":
+    ("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer2 = input("What fucntion is used to define a fucntion: ")
+  if answer2.lower() == "def":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer3 = input("What stores multiple items in a single variable: ")
+  if answer3.lower() == "tuple":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer4 = input("Whose purpose is of filling up empty blocks of code which may execute during runtime but has yet to be written: ")
+  if answer4.lower() == "pass":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer5 = input("What statement terminates the loop immediately and the control flows to the statement after the body of the loo: ")
+  if answer5.lower() == "break":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+elif playing.lower() == "riddles" or playing.lower() == "riddle":
+  print("Okay, Let's play the Riddles Game!!")
+
+  answer1 = input("What is known as ship of the desert: ")
+  if answer1.lower() == "camel":
+    ("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer2 = input("Which building has the most stories: ")
+  if answer2.lower() == "library":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer3 = input("What is full of holes but still holds water: ")
+  if answer3.lower() == "sponge":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer4 = input("What is the last thing that you take off before going to bed: ")
+  if answer4.lower() == "your feet" or answer4.lower() == "feet":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+  answer5 = input("What is the one thing you own but other use it more than you: ")
+  if answer5.lower() == "your name" or answer5.lower() == "name":
+    print("Correct!")
+    score += 1
+  else:
+    print("Incorrect Answer")
+
+print("Your score: "+ str(score)+"/5")
